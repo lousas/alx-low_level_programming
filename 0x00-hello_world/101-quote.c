@@ -8,8 +8,7 @@
  */
 int main(void)
 {
-
-	write(STDERR_FILENO, "and that piece of art is useful\" - Dora Korpar, ", 50);
-	write(STDERR_FILENO, "2015-10-19\n", 12);
+	char quo[] = "and that piece of art is useful\"  - Dora Korpar, 2015-10-19\n";
+	 write(1, qu, 59);
 	return (1);
 }
