@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: true or false validation
+ * Description: Assigns and classifies a random number.
  *
- * Return: 0 (success)
+ * Return: 0 for success
  */
 int main(void)
 {
@@ -15,13 +16,15 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
+	printf("%d ", n);
 
 	if (n > 0)
-		printf("%i is positive\n", n);
+		printf("is positive\n");
 	else if (n == 0)
-		printf("%i is 0\n", n);
-	else if (n < 0)
-		printf("%i is negative\n", n);
+		printf("is zero\n");
+	else
+		printf("is negative\n");
+
 	return (0);
 }
-}
+
