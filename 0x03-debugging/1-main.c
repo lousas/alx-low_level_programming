@@ -12,11 +12,9 @@ int main(void)
 
 	i = 0;
 
-	/* Comment out the infinite loop while loop */
+	/* Comment out the infinite loop */
 	while (i < 10)
-	{
 		putchar(i);
-	}
 
 	printf("Infinite loop avoided! \\o/\n");
 
